@@ -1,0 +1,7 @@
+In this programming assignment, you will see some aspects of manipulating an Abstract Syntax Tree (AST) data structure for a simple calulator language. The data structure definition is given in the `Expr` struct in `expr.h`. This programming assignment has 3 parts:
+
+1. In `expr.c`, fill in the functions `mk_expr1`, `mk_expr2`, and `mk_expr3` to construct the listed expression ASTs. You may use the helper constructors we have defined in `expr.c`, but make sure you use them properly. After completing this part, the output from running `make; ./expr` should look as documented in the comments in `main.c`, except for the parts that depend on `eval`.
+2. Complete the `free_expr` function in `expr.c`. This function must free all memory associated with the input expression AST, and must not cause any double-free or dangling-pointer reference errors. After completing this part, running `make; valgrind --tool=memcheck ./expr` should show no memory leaks.
+3. Complete the `eval` function in `expr.c`. This function should evaluate an input expression AST. After completing this part, the output from running `make; ./expr` should look as documented in the comments in `main.c`.
+
+Be sure to test your code on test cases other than the ones provided, as we will run extra tests on the final submission. Exercise good programming practice; your program must compile with the `-Wall -Wextra -Werror` optoins enabled.
