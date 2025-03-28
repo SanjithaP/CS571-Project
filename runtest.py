@@ -9,11 +9,11 @@ NEW_REF_OUTPUT = Path('.').resolve()/'new_ref_out'
 COLLABORATORS = Path('.').resolve()/'collaborators'
 
 def check_collaborators():
-    default_collabs = """Collaborators:
+    default_collabs = """Collaborators: SANJITHA PRAVEEN
 
 External resources:
 
-I certify that other than listed above, I have not collaborated with anyone on this assignment nor have I used any external resources to assist me in completing this assignment: <put your name here>
+I certify that other than listed above, I have not collaborated with anyone on this assignment nor have I used any external resources to assist me in completing this assignment: SANJITHA PRAVEEN
 """
 
     collabs = None
